@@ -1,14 +1,17 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - changgoo
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - changgoo/PRFM
+  - changgoo/Twind
+  - changgoo/AstroCoffee
+  - changgoo/tigris_scripts
+  - changgoo/page
+  - changgoo/CV
+  - changgoo/TIGRESS-CR
+  - jeonggyukim/pyathena
+  - PrincetonUniversity/astro-tigress
+  - PrincetonUniversity/athena
+  - PrincetonUniversity/tigris
