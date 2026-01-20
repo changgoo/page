@@ -1,3 +1,7 @@
 nbconvert
 pyyaml
 scholarly
+bibtexparser
+bs4
+pyyaml
+requests
