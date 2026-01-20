@@ -30,6 +30,10 @@
   color: "#939BB2"
   url: https://iopscience.iop.org/journal/0067-0049
 
+"ApJL":
+  color: "#3d85c6"
+  url: https://iopscience.iop.org/journal/2041-8205
+
 "JCAP":
   color: "#0B6F9E"
   url: https://jcap.sissa.it/jcap/
