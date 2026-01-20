@@ -142,7 +142,9 @@ for entry in bibtex_database.entries:
     for k in customization[entry['ID']]:
       entry[k] = customization[entry['ID']][k]
 
-  entries.append(entry)
+  # Only keep entries with eprint
+  if 'eprint' in entry.keys():
+    entries.append(entry)
 # Updating entries
 bibtex_database.entries = entries
 
