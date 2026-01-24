@@ -28,16 +28,18 @@
     },
     {
       "name": "Astrophysical Sciences, Princeton University",
-      "position": "Postdoc, Associate Research Scholar",
+      "position": "Associate Research Scholar",
+      "url": "https://web.astro.princeton.edu/",
       "location": "Princeton, NJ, USA",
-      "startDate": "2013-09-01",
+      "startDate": "2016-09-01",
       "endDate": "2023-06-31",
       "summary": "",
       "highlights": []
     },
     {
       "name": "Center for Computational Astrophysics, Flatiron Institute",
-      "position": "Flatiron Research Fello",
+      "position": "Flatiron Research Fellow",
+      "url": "https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/",
       "location": "New York, NY, USA",
       "startDate": "2017-09-01",
       "endDate": "2018-08-31",
@@ -45,8 +47,19 @@
       "highlights": []
     },
     {
+      "name": "Astrophysical Sciences, Princeton University",
+      "position": "Postdoctoral Research Associate",
+      "url": "https://web.astro.princeton.edu/",
+      "location": "Princeton, NJ, USA",
+      "startDate": "2013-09-01",
+      "endDate": "2016-08-31",
+      "summary": "",
+      "highlights": []
+    },
+    {
       "name": "Department of Physics and Astronomy, Western University",
       "position": "CITA National Fellow",
+      "url": "https://physics.uwo.ca/",
       "location": "London, ON, Canada",
       "startDate": "2011-10-01",
       "endDate": "2013-08-31",

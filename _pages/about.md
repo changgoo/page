@@ -29,6 +29,8 @@ latest_posts:
 
 Welcome! I'm a research scholar in the department of Astrophysical Sciences at Princeton University.
 
+My research program develops physically grounded, first-principles models of the star-forming interstellar medium and its coupling to galaxy evolution.
+
 My research is driven by the premise that robust synthesis must be built from first principles. Rather than relying on phenomenological prescriptions, I develop physical understanding of individual processes using theory and controlled simulations.
 I then implement and validate the corresponding numerical methods, and synthesize these elements into comprehensive frameworks where emergent behavior can be interpreted physically. Finally, I connect simulation results from these frameworks to observations through synthetic diagnostics, enabling continuous testing and refinement against real data.
 
