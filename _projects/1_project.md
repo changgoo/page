@@ -2,7 +2,7 @@
 layout: page
 title: TIGRESS-NCR
 description: TIGRESS with Non-equilibrium Cooling and Radiation
-img: assets/img/LtU-TIGRESS_NCR_LGR4.png
+img: LtU-TIGRESS_NCR_LGR4.png
 importance: 1
 category: TIGRESS
 related_publications: true
