@@ -148,9 +148,10 @@ for entry in bibtex_database.entries:
 
   # Getting the altmetric info
   if 'doi' in entry.keys():
-    r = requests.get('https://api.altmetric.com/v1/doi/'+entry['doi'])
-    if r.ok and 'altmetric_id' in r.json().keys():
-      entry['altmetric'] = str(r.json()['altmetric_id'])
+    entry['altmetric'] = 'true'
+    # r = requests.get('https://api.altmetric.com/v1/doi/'+entry['doi'])
+    # if r.ok and 'altmetric_id' in r.json().keys():
+    #   entry['altmetric'] = str(r.json()['altmetric_id'])
 
   # If the entry has some customization, apply it
   if entry['ID'] in customization.keys():
@@ -169,8 +170,8 @@ writer.order_entries_by = None
 with open('_bibliography/mypapers.bib', 'w') as bibfile:
   bibfile.write(writer.write(bibtex_database))
 
-with open("_data/ads_citation.md", "w") as f:
+with open("_includes/ads_citation.md", "w") as f:
   f.write(str(citation_count))
 
-with open("_data/ads_h.md", "w") as f:
+with open("_includes/ads_h.md", "w") as f:
   f.write(str(h_index))
