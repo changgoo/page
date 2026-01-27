@@ -170,8 +170,8 @@ writer.order_entries_by = None
 with open('_bibliography/mypapers.bib', 'w') as bibfile:
   bibfile.write(writer.write(bibtex_database))
 
-with open("_data/ads_citation.md", "w") as f:
+with open("_includes/ads_citation.md", "w") as f:
   f.write(str(citation_count))
 
-with open("_data/ads_h.md", "w") as f:
+with open("_includes/ads_h.md", "w") as f:
   f.write(str(h_index))

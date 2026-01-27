@@ -52,7 +52,8 @@ jobs:
     - name: Commit and push if changed
       run: |
         git add _bibliography/mypapers.bib
-        git add _data/ads_citation.md
+        git add _includes/ads_citation.md
+        git add _includes/ads_h.md
         git diff --staged --quiet || (
           echo "📤 Committing and pushing changes..."
           git commit -m "Update ADS publications"
