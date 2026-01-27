@@ -1,8 +1,13 @@
 "2017ApJ...846..133K":
   selected: "true"
+  preview: "tigress_merged.jpg"
 
 "2020ApJ...900...61K":
   selected: "true"
+  preview: "Kim2020.png"
+
+"2020ApJ...903L..34K":
+  code: "https://twind.readthedocs.io/en/latest/"
 
 "2023ApJ...946....3K":
   selected: "true"
@@ -10,3 +15,5 @@
 
 "2024ApJ...972...67K":
   selected: "true"
+  preview: "Kim2024.png"
+  code: "https://changgoo.github.io/PRFM/intro.html"

@@ -149,6 +149,7 @@ for entry in bibtex_database.entries:
   # Getting the altmetric info
   if 'doi' in entry.keys():
     entry['altmetric'] = 'true'
+    entry['dimensions'] = 'true'
     # r = requests.get('https://api.altmetric.com/v1/doi/'+entry['doi'])
     # if r.ok and 'altmetric_id' in r.json().keys():
     #   entry['altmetric'] = str(r.json()['altmetric_id'])
