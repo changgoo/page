@@ -52,55 +52,55 @@ archivePrefix = {arXiv},
       adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }}
 
-@article{2026arXiv260610026J,
+@article{2026arXiv260614946D,
  abbr = {arXiv},
- abstract = {{We present a new subgrid model for interstellar gas evolution in
-cosmological simulations of galaxy formation, based on the
-pressure-regulated, feedback-modulated (PRFM) theory of star
-formation. In contrast to the empirically pegged star formation
-prescriptions employed in current cosmological simulations, the
-PRFM model links the local star formation rate to the dynamic
-balance achieved in galactic interstellar gas between gravity
-and stellar feedback effects. With this formulation, both the
-star formation efficiency and the effective equation of state
-may be directly calibrated using numerical simulations, such as
-TIGRESS, which resolve physics of the interstellar medium and
-star formation at parsec scales. We develop, and implement in
-the Arepo moving-mesh code, two complementary classes of the
-subgrid model: a volumetric version (PRFM-vol) applicable when
-the gas disk scale height of a galaxy is numerically resolved in
-a simulation, and an integrated version (PRFM-int) that
-reconstructs the mid-plane density and pressure from vertical
-equilibrium considerations when the true gas scale height cannot
-be numerically resolved. Using isolated Milky-Way-like disk
-simulations across mass resolutions $10^5$-$10^7~{\rm M}_\odot$,
-we show that both implementations yield shorter gas depletion
-times than the IllustrisTNG prescription, especially in regions
-where pressure and density are large. At high resolution, PRFM-
-vol and PRFM-int agree closely with each other and with TIGRESS
-for the star formation rate; PRFM-int remains robust at all
-resolutions tested. These results demonstrate that PRFM-derived
-subgrid prescriptions provide a physically grounded and
-numerically stable framework for star formation across the
-dynamic range of galaxy formation simulations, paving the way
-for future cosmological applications.}},
+ abstract = {{The turbulence driving parameter ($b \equiv σ_{ρ/\langle
+ρ\rangle}/\mathcal{M}$; the ratio of the density to velocity
+fluctuations) is widely used to infer the dominant mode of
+energy injection in interstellar turbulence. Numerical
+simulations of turbulence using Fourier Space Driving (FSD)
+establish a mapping from $b\approx 1/3$ for purely solenoidal to
+$b\approx 1$ for purely compressive driving. We test the
+robustness of this calibration by comparing FSD against Point
+Source Driving (PSD), which stochastically injects radial
+momentum at random locations mimicking supernovae. Using
+isothermal hydrodynamic simulations in a periodic box with
+AthenaK, we run a suite of carefully curated simulations to
+match Mach numbers between the two driving methods and compare
+morphology, probability density functions, and power spectra of
+density and velocity. Despite injecting purely compressive
+motions, the PSD models yield $b=0.33$ to $0.49$, values that
+the FSD calibration would associate with more solenoidal
+driving. With mass-weighted mean Mach number, excluding high-
+velocity bubble interiors, $b_M=0.74$ to $0.79$ still does not
+recover the expected $b\approx 1$ for volume-filling, purely
+compressive driving. More broadly, the PSD models show density
+and velocity statistics closer to solenoidal and compressive FSD
+models, respectively, and exhibit unique features, including
+non-Gaussian velocity tails and a positive density-Mach number
+correlation at high densities. Within the FSD framework itself,
+varying the forcing correlation time changes $b$ by a factor of
+more than 3 for compressive driving. These results demonstrate
+that $b$ is degenerate with both the spatial locality and the
+temporal correlation of the driving, limiting its utility as a
+standalone diagnostic of the energy injection mode.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
- adsurl = {https://ui.adsabs.harvard.edu/abs/2026arXiv260610026J},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2026arXiv260614946D},
  altmetric = {true},
  archiveprefix = {arXiv},
- arxiv = {2606.10026},
- author = {{Jeffreson}, Sarah M.~R. and {Ostriker}, Eve C. and {Kim}, Chang-Goo and {Burger}, Jan},
+ arxiv = {2606.14946},
+ author = {{Desire}, Tejahni and {Kim}, Chang-Goo and {Mohapatra}, Rajsekhar},
  bibtex_show = {true},
  dimensions = {true},
- doi = {10.48550/arXiv.2606.10026},
- eid = {arXiv:2606.10026},
- eprint = {2606.10026},
+ doi = {10.48550/arXiv.2606.14946},
+ eid = {arXiv:2606.14946},
+ eprint = {2606.14946},
  journal = {arXiv e-prints},
- keywords = {Astrophysics of Galaxies, Cosmology and Nongalactic Astrophysics},
+ keywords = {Astrophysics of Galaxies, Fluid Dynamics},
  month = {June},
- pages = {arXiv:2606.10026},
+ pages = {arXiv:2606.14946},
  primaryclass = {astro-ph.GA},
- title = {{Pressure-regulated feedback-modulated star formation as a subgrid model for galaxy formation simulations}},
+ title = {{A Comparative Study of Isothermal Turbulence Statistics: Fourier Space Driving vs. Point Source Driving}},
  year = {2026}
 }
 
@@ -184,6 +184,61 @@ the intergalactic medium in this region.}},
  pages = {arXiv:2606.02353},
  primaryclass = {astro-ph.GA},
  title = {{Revisiting ram pressure stripping in Wolf-Lundmark-Melotte: No evidence for stripped HI with LGLBS}},
+ year = {2026}
+}
+
+@article{2026ApJ..1004..152J,
+ abbr = {ApJ},
+ abstract = {{We present a new subgrid model for interstellar gas evolution in
+cosmological simulations of galaxy formation, based on the
+pressure-regulated, feedback-modulated (PRFM) theory of star
+formation. In contrast to the empirically pegged star formation
+prescriptions employed in current cosmological simulations, the
+PRFM model links the local star formation rate to the dynamic
+balance achieved in galactic interstellar gas between gravity
+and stellar feedback effects. With this formulation, both the
+star formation efficiency and the effective equation of state
+may be directly calibrated using numerical simulations, such as
+TIGRESS, which resolve physics of the interstellar medium and
+star formation at parsec scales. We develop, and implement in
+the AREPO moving-mesh code, two complementary classes of the
+subgrid model: a volumetric version (PRFM-vol), applicable when
+the gas disk scale height of a galaxy is numerically resolved in
+a simulation, and an integrated version (PRFM-int), which
+reconstructs the midplane density and pressure from vertical
+equilibrium considerations when the true gas scale height cannot
+be numerically resolved. Using isolated Milky Way─like disk
+simulations across mass resolutions {}10$^{5}$─{}10$^{7}$
+M$_{{\ensuremath{\odot}}}$, we show that both implementations
+yield shorter gas depletion times than the IllustrisTNG
+prescription, especially in regions where the pressure and
+density are large. At high resolution, PRFM-vol and PRFM-int
+agree closely with each other and with TIGRESS for the star
+formation rate; PRFM-int remains robust at all resolutions
+tested. These results demonstrate that PRFM-derived subgrid
+prescriptions provide a physically grounded and numerically
+stable framework for star formation across the dynamic range of
+galaxy formation simulations, paving the way for future
+cosmological applications.}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2026ApJ..1004..152J},
+ altmetric = {true},
+ archiveprefix = {arXiv},
+ arxiv = {2606.10026},
+ author = {{Jeffreson}, Sarah M.~R. and {Ostriker}, Eve C. and {Kim}, Chang-Goo and {Burger}, Jan},
+ bibtex_show = {true},
+ dimensions = {true},
+ doi = {10.3847/1538-4357/ae64e5},
+ eid = {152},
+ eprint = {2606.10026},
+ journal = {Astrophysical Journal},
+ keywords = {Cosmological evolution, Galaxy formation, Galaxy evolution, Disk galaxies, Computational methods, Hydrodynamical simulations, Star formation, 336, 595, 594, 391, 1965, 767, 1569, Astrophysics of Galaxies, Cosmology and Nongalactic Astrophysics},
+ month = {June},
+ number = {2},
+ pages = {152},
+ primaryclass = {astro-ph.GA},
+ title = {{Pressure-regulated Feedback-modulated Star Formation as a Subgrid Model for Galaxy Formation Simulations}},
+ volume = {1004},
  year = {2026}
 }
 
