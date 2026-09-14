@@ -3,8 +3,7 @@
 
 import requests
 import bibtexparser
-from bibtexparser.bibdatabase import BibDatabase
-from bibtexparser.bwriter import BibTexWriter
+from bibtexparser.writer import BibtexWriter
 from bs4 import BeautifulSoup
 import json
 import yaml
@@ -166,7 +165,7 @@ for entry in bibtex_database.entries:
 bibtex_database.entries = entries
 
 # Exporting bibtex file
-writer = BibTexWriter()
+writer = BibtexWriter()
 writer.order_entries_by = None
 with open('_bibliography/mypapers.bib', 'w') as bibfile:
   bibfile.write(writer.write(bibtex_database))
