@@ -1,5 +1,27 @@
 ---
 ---
+{% comment %} Citation count for sorting: use bib field ads_citations (from bibgen.py), else Google Scholar {% endcomment %}
+{% assign entry_citation_count = 0 %}
+{% assign ads_count = entry.ads_citations | default: entry.ads_citations %}
+{% if ads_count != blank and ads_count != '' %}
+  {% assign entry_citation_count = ads_count | plus: 0 %}
+{% elsif site.enable_publication_badges.google_scholar and entry.google_scholar_id %}
+  {% assign scholar_id_key = site.data.socials.scholar_userid | append: ':' | append: entry.google_scholar_id %}
+  {% assign publication_key = entry.google_scholar_id %}
+  {% if site.data.citations.papers[scholar_id_key] %}
+    {% assign entry_citation_count = site.data.citations.papers[scholar_id_key].citations %}
+  {% elsif site.data.citations.papers[publication_key] %}
+    {% assign entry_citation_count = site.data.citations.papers[publication_key].citations %}
+  {% else %}
+    {% for paper in site.data.citations.papers %}
+      {% assign paper_key = paper[0] %}
+      {% if paper_key contains entry.google_scholar_id %}
+        {% assign entry_citation_count = paper[1].citations %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endif %}
 <div class="row">
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
@@ -46,7 +68,11 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+  <div
+    id="{{ entry.key }}"
+    class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}"
+    data-citations="{{ entry_citation_count }}"
+  >
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
@@ -195,9 +221,9 @@
         </a>
       {% endif %}
       {% comment %}
-      {% if entry.abstract %}
-        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-      {% endif %}
+        {% if entry.abstract %}
+          <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+        {% endif %}
       {% endcomment %}
       {% if entry.adsurl %}
         <a href="{{ entry.adsurl }}" class="btn btn-sm z-depth-0" role="button">ADS</a>

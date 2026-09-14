@@ -1,4 +1,18 @@
 {% if site.bib_search %}
   <script src="{{ '/assets/js/bibsearch.js' | relative_url | bust_file_cache }}" type="module"></script>
-  <input type="text" id="bibsearch" spellcheck="false" autocomplete="off" class="search bibsearch-form-input" placeholder="Type to filter">
+  <script src="{{ '/assets/js/bibsort.js' | relative_url | bust_file_cache }}" type="module"></script>
+  <div class="d-flex flex-column flex-md-row gap-2 mb-3 align-items-start">
+    <input
+      type="text"
+      id="bibsearch"
+      spellcheck="false"
+      autocomplete="off"
+      class="search bibsearch-form-input flex-grow-1"
+      placeholder="Type to filter"
+    >
+    <div class="d-flex gap-2">
+      <button id="sort-by-year" class="btn btn-sm btn-outline-secondary">Sort by Year</button>
+      <button id="sort-by-citation" class="btn btn-sm btn-outline-secondary">Sort by Citation</button>
+    </div>
+  </div>
 {% endif %}
