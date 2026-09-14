@@ -1,7 +1,7 @@
 nbconvert
 pyyaml
 scholarly
-bibtexparser
+bibtexparser==1.4.3
 bs4
 pyyaml
 requests

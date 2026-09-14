@@ -3,7 +3,7 @@
 
 import requests
 import bibtexparser
-from bibtexparser.writer import BibtexWriter
+from bibtexparser.bwriter import BibTexWriter
 from bs4 import BeautifulSoup
 import json
 import yaml
@@ -96,24 +96,28 @@ api_key = os.environ['ADS_API_TOKEN']
 with open('_data/custom_bib.yml', 'r') as f:
   customization = yaml.load(f, Loader=yaml.FullLoader)
 
-# Getting all bibcodes
-encoded_query='q==author:"kim,chang-goo"&fl=bibcode,citation_count&rows=1000&sort=date+desc'
-r = requests.get('https://api.adsabs.harvard.edu/v1/search/query?'+encoded_query,
-                 headers={"Authorization":"Bearer "+api_key,})
+# Getting all bibcodes and citation counts from ADS
+encoded_query = 'q==author:"kim,chang-goo"&fl=bibcode,citation_count&rows=1000&sort=date+desc'
+r = requests.get(
+    'https://api.adsabs.harvard.edu/v1/search/query?' + encoded_query,
+    headers={"Authorization": "Bearer " + api_key},
+)
 soup = BeautifulSoup(r.content, 'html.parser')
 bibcodes = json.loads(soup.contents[0])['response']['docs']
+# Map bibcode -> citation_count for attaching to BibTeX entries
+ads_citation_by_bibcode = {d['bibcode']: d.get('citation_count', 0) for d in bibcodes}
 # Updating metrics
 citation_count = sum(entry["citation_count"] for entry in bibcodes)
 h_index = find_h_index(entry["citation_count"] for entry in bibcodes)
 bibtex_query = ""
 for entry in bibcodes:
-  bibtex_query += '"%s",'%entry['bibcode']
+    bibtex_query += '"%s",' % entry['bibcode']
 bibtex_query = bibtex_query[:-1]
 
 # Retrieving the full bibtex entries
 r = requests.post('https://api.adsabs.harvard.edu/v1/export/bibtexabs',
                  data='{"bibcode":[%s]}'%bibtex_query,
-                 headers={"Authorization":"Bearer 3QIMn4lO1ovg0pF1IQFkiILhElJiYLs0sLB9oWPS",
+                 headers={"Authorization": "Bearer " + api_key,
                           "Content-Type": "application/json"})
 result = r.json()['export']
 # Parse it with bibtexparser
@@ -158,6 +162,9 @@ for entry in bibtex_database.entries:
     for k in customization[entry['ID']]:
       entry[k] = customization[entry['ID']][k]
 
+  # Add ADS citation count from query (keyed by bibcode = ID in ADS export)
+  entry['ads_citations'] = str(ads_citation_by_bibcode.get(entry.get('ID', ''), 0))
+
   # Only keep entries with eprint
   if 'eprint' in entry.keys():
     entries.append(entry)
@@ -165,7 +172,7 @@ for entry in bibtex_database.entries:
 bibtex_database.entries = entries
 
 # Exporting bibtex file
-writer = BibtexWriter()
+writer = BibTexWriter()
 writer.order_entries_by = None
 with open('_bibliography/mypapers.bib', 'w') as bibfile:
   bibfile.write(writer.write(bibtex_database))
