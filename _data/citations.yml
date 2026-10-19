@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-10-12'
+  last_updated: '2026-10-19'
 papers:
   jBOsJgoAAAAJ:-6RzNnnwWf8C:
     citations: 0
     title: Dust imaging of low metallicity molecular clouds in NGC 6822 and WLM
     year: '2023'
   jBOsJgoAAAAJ:-DxkuPiZhfEC:
-    citations: 145
+    citations: 147
     title: Pressure-regulated, feedback-modulated star formation in disk galaxies
     year: '2022'
   jBOsJgoAAAAJ:-uzm3Y7AvW0C:
@@ -50,7 +50,7 @@ papers:
     title: 'Learning the universe: GalactISM simulations of resolved star formation and galactic outflows across main-sequence and quenched galactic environments'
     year: '2024'
   jBOsJgoAAAAJ:65Yg0jNCQDAC:
-    citations: 66
+    citations: 67
     title: 'First Results from SMAUG: The Need for Preventative Stellar Feedback and Improved Baryon Cycling in Semianalytic Models of Galaxy Formation'
     year: '2020'
   jBOsJgoAAAAJ:69ZgNCALVd0C:
@@ -62,7 +62,7 @@ papers:
     title: Star formation in nuclear rings controlled by bar-driven gas inflow
     year: '2021'
   jBOsJgoAAAAJ:9yKSN-GCB0IC:
-    citations: 210
+    citations: 211
     title: 'Regulation of star formation rates in multiphase galactic disks: numerical tests of the thermal/dynamical equilibrium model'
     year: '2011'
   jBOsJgoAAAAJ:A8cqit5AE6sC:
@@ -70,7 +70,7 @@ papers:
     title: Implementation of Chemistry in the Athena plus plus Code
     year: '2023'
   jBOsJgoAAAAJ:AYInfyleIOsC:
-    citations: 49
+    citations: 50
     title: "Arkenstone \u2013 I. A novel method for robustly capturing high specific energy outflows in cosmological simulations"
     year: '2024'
   jBOsJgoAAAAJ:AzKEL7Gb_04C:
@@ -94,7 +94,7 @@ papers:
     title: Current induced by a fast charged test particle moving into rarefied plasmas
     year: '1999'
   jBOsJgoAAAAJ:CYCckWUYoCcC:
-    citations: 98
+    citations: 99
     title: The origin of parity violation in polarized dust emission and implications for cosmic birefringence
     year: '2021'
   jBOsJgoAAAAJ:D_tqNUsBuKoC:
@@ -110,7 +110,7 @@ papers:
     title: 'Cool gas and star formation properties of ram pressure stripped galaxy NGC 4522: Insights from the TIGRESS simulation'
     year: '2019'
   jBOsJgoAAAAJ:DyXnQzXoVgIC:
-    citations: 44
+    citations: 46
     title: Star Formation in nuclear rings with the TIGRESS framework
     year: '2021'
   jBOsJgoAAAAJ:EPG8bYD4jVwC:
@@ -126,7 +126,7 @@ papers:
     title: Resolving the thin disk of a nearby Milky Way analog
     year: '2025'
   jBOsJgoAAAAJ:HJSXoJQnj-YC:
-    citations: 37
+    citations: 39
     title: Cloud properties and correlations with star formation in self-consistent simulations of the multiphase ism
     year: '2020'
   jBOsJgoAAAAJ:H_jBuBxbQIAC:
@@ -134,15 +134,15 @@ papers:
     title: 'Pumping iron: how turbulent metal diffusion impacts multiphase galactic outflows'
     year: '2025'
   jBOsJgoAAAAJ:Hck25ST_3aIC:
-    citations: 190
+    citations: 194
     title: 'First results from SMAUG: characterization of multiphase galactic outflows from a suite of local star-forming galactic disk simulations'
     year: '2020'
   jBOsJgoAAAAJ:IsPWOBWtZBwC:
-    citations: 77
+    citations: 78
     title: Local simulations of spiral galaxies with the TIGRESS framework. I. Star formation and arm spurs/feathers
     year: '2020'
   jBOsJgoAAAAJ:JP7YXuLIOvAC:
-    citations: 12
+    citations: 13
     title: The line emission mapper (LEM) probe mission concept
     year: '2024'
   jBOsJgoAAAAJ:KWzIFqRkAKkC:
@@ -170,7 +170,7 @@ papers:
     title: "Arkenstone \u2013 II. A model for unresolved cool clouds entrained in galactic winds in cosmological simulations"
     year: '2024'
   jBOsJgoAAAAJ:NxmKEeNBbOMC:
-    citations: 51
+    citations: 54
     title: Magnetized accretion onto and feedback from supermassive black holes in elliptical galaxies
     year: '2024'
   jBOsJgoAAAAJ:QUX0mv85b1cC:
@@ -182,7 +182,7 @@ papers:
     title: The Environmental Dependence of the XCO Conversion Factor
     year: '2020'
   jBOsJgoAAAAJ:RJOyoaXV5v8C:
-    citations: 63
+    citations: 64
     title: Toward horizon-scale accretion onto supermassive black holes in elliptical galaxies
     year: '2023'
   jBOsJgoAAAAJ:RtRctb2lSbAC:
@@ -194,11 +194,11 @@ papers:
     title: Applying a star formation model calibrated on high-resolution interstellar medium simulations to cosmological simulations of galaxy formation
     year: '2025'
   jBOsJgoAAAAJ:SGW5VrABaM0C:
-    citations: 266
+    citations: 267
     title: Numerical simulations of multiphase winds and fountains from star-forming galactic disks. I. Solar neighborhood TIGRESS model
     year: '2018'
   jBOsJgoAAAAJ:SIv7DqKytYAC:
-    citations: 156
+    citations: 155
     title: Efficiently Cooled Stellar Wind Bubbles in Turbulent Clouds. I. Fractal Theory and Application to Star-forming Clouds
     year: '2021'
   jBOsJgoAAAAJ:SnGPuo6Feq8C:
@@ -266,11 +266,11 @@ papers:
     title: Feedback Regulated Turbulence, Magnetic Fields, and Star Formation Rates in Galactic Disks
     year: '2015'
   jBOsJgoAAAAJ:ZqE1mSdD_DYC:
-    citations: 13
+    citations: 14
     title: 'Ultraviolet Radiation Fields in Star-forming Disk Galaxies: Numerical Simulations with TIGRESS-NCR'
     year: '2024'
   jBOsJgoAAAAJ:_AeoHAGD03cC:
-    citations: 0
+    citations: 1
     title: "Revisiting Ram Pressure Stripping in Wolf\u2013Lundmark\u2013Melotte: No Evidence for Stripped H I with Local Group L-Band Survey"
     year: '2026'
   jBOsJgoAAAAJ:_FxGoFyzp5QC:
@@ -285,16 +285,20 @@ papers:
     citations: 0
     title: Magnetic Fields and Star Formation in Nuclear Rings of Disk Galaxies
     year: '2024'
+  jBOsJgoAAAAJ:c_xDhezhKKUC:
+    citations: 0
+    title: "[\uAD6C GC-07] The Impact of Ram Pressure on the Radio Spectral Index and Magnetic Field of NGC 4522: A High-Resolution VLA Continuum Study"
+    year: '2026'
   jBOsJgoAAAAJ:d1gkVwhDpl0C:
     citations: 36
     title: Galactic spiral shocks with thermal instability in vertically stratified galactic disks
     year: '2010'
   jBOsJgoAAAAJ:eAlLMO4JVmQC:
-    citations: 84
+    citations: 85
     title: Introducing TIGRESS-NCR. I. Coregulation of the multiphase interstellar medium and star formation rates
     year: '2023'
   jBOsJgoAAAAJ:eGYfIraVYiQC:
-    citations: 13
+    citations: 14
     title: Photochemistry and heating/cooling of the multiphase interstellar medium with UV radiative transfer for magnetohydrodynamic simulations
     year: '2023'
   jBOsJgoAAAAJ:eO3_k5sD8BwC:
@@ -314,7 +318,7 @@ papers:
     title: TIGRESS simulation data
     year: '2022'
   jBOsJgoAAAAJ:hGdtkIFZdKAC:
-    citations: 14
+    citations: 15
     title: Prevention is better than cure? Feedback from high specific energy winds in cosmological simulations with Arkenstone
     year: '2025'
   jBOsJgoAAAAJ:hQUaER0FWQ4C:
@@ -346,7 +350,7 @@ papers:
     title: Pressure-regulated feedback-modulated star formation as a subgrid model for galaxy formation simulations
     year: '2026'
   jBOsJgoAAAAJ:kF1pexMAQbMC:
-    citations: 342
+    citations: 347
     title: 'Three-phase interstellar medium in galaxies resolving evolution with star formation and supernova feedback (TIGRESS): algorithms, fiducial model, and convergence'
     year: '2017'
   jBOsJgoAAAAJ:k_7cPK9k7w8C:
@@ -382,7 +386,7 @@ papers:
     title: Superbubbles in the Multiphase ISM and the Loading of Galactic Winds
     year: '2017'
   jBOsJgoAAAAJ:qE4H1tSSYIIC:
-    citations: 23
+    citations: 24
     title: Effects of magnetic fields on gas dynamics and star formation in nuclear rings
     year: '2023'
   jBOsJgoAAAAJ:qe6vwMD2xtsC:
@@ -394,7 +398,7 @@ papers:
     title: Galactic Spiral Shocks with Thermal Instability in Vertically Stratified Disks
     year: '2010'
   jBOsJgoAAAAJ:qwy9JoKyICEC:
-    citations: 27
+    citations: 28
     title: Effects of Varying Mass Inflows on Star Formation in Nuclear Rings of Barred Galaxies
     year: '2022'
   jBOsJgoAAAAJ:rTD5ala9j4wC:
@@ -406,7 +410,7 @@ papers:
     title: 'Self-Regulation of Star Formation Rates: an Equilibrium Vieww'
     year: '2016'
   jBOsJgoAAAAJ:rbm3iO8VlycC:
-    citations: 51
+    citations: 53
     title: "Ly\u03B1 Radiative Transfer: Monte Carlo Simulation of the Wouthuysen\u2013Field Effect"
     year: '2020'
   jBOsJgoAAAAJ:roLk4NBRz8UC:
@@ -422,7 +426,7 @@ papers:
     title: The Coevolution of Stellar Wind-blown Bubbles and Photoionized Gas. I. Physical Principles and a Semianalytic Model
     year: '2025'
   jBOsJgoAAAAJ:sA9dB-pw3HoC:
-    citations: 215
+    citations: 216
     title: Characterizing mass, momentum, energy, and metal outflow rates of multiphase galactic winds in the FIRE-2 cosmological simulations
     year: '2021'
   jBOsJgoAAAAJ:silx2ntsSuwC:
@@ -450,15 +454,15 @@ papers:
     title: High-resolution ALMA observations and TIGRESS simulation as probes of the multiphase ISM evolution
     year: '2024'
   jBOsJgoAAAAJ:v6i8RKmR8ToC:
-    citations: 65
+    citations: 66
     title: 'GASKAP-HI pilot survey science I: ASKAP zoom observations of Hi emission in the Small Magellanic Cloud'
     year: '2022'
   jBOsJgoAAAAJ:w1MjKQ0l0TYC:
-    citations: 76
+    citations: 77
     title: Chemistry and radiative shielding in star forming galactic disks
     year: '2016'
   jBOsJgoAAAAJ:wvYxNZNCP7wC:
-    citations: 49
+    citations: 50
     title: Kinematics and Dynamics of Multiphase Outflows in Simulations of the Star-forming Galactic Interstellar Medium
     year: '2020'
   jBOsJgoAAAAJ:z6xuaG2dYH0C:
